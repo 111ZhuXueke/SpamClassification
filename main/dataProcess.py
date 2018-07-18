@@ -78,14 +78,14 @@ for item in list0:
                 lineStr += "," + index_dict[index_key] + "\n";
                 writer.writelines(lineStr);
     print("写入完毕!")
-print("File result_process正在写入......" ,end='')
 with open("D:\\python\\data\\email\\trec06c\\pros\\result_process",'w',encoding = 'utf-8') as writer:
+    print("File result_process正在写入......" ,end='')
     for item in list0:
         file_path = "D:\\python\\data\\email\\trec06c\\pros\\" + "process_" + str(item);
         with open(file_path, encoding = 'utf-8') as file:
             for line in file:
                 writer.writelines(line)
-print("写入完毕!")
+    print("写入完毕!")
 endTime = time.time();
 print('数据处理总共耗时%.2fs'%(endTime - startTime));
 
