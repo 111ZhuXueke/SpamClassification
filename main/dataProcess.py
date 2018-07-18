@@ -78,6 +78,7 @@ for item in list0:
                 lineStr += "," + index_dict[index_key] + "\n";
                 writer.writelines(lineStr);
     print("写入完毕!")
+	
 with open("D:\\python\\data\\email\\trec06c\\pros\\result_process",'w',encoding = 'utf-8') as writer:
     print("File result_process正在写入......" ,end='')
     for item in list0:
